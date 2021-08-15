@@ -1,6 +1,6 @@
 [
 	{
-		"name": "/profile//osquery/nic/",
+		"name": "/profile/*/osquery/nic/*",
 		"attributes": [
 			{
 				"name": "name",
@@ -138,35 +138,36 @@
 				"name": "flag_multicast",
 				"type": "java.lang.Boolean",
 				"description": null
-			},
+			}
+		]
+	},
+	{
+		"name": "/profile/*/osquery/nic/*/windows",
+		"attributes": [
 			{
 				"name": "luid",
 				"type": "java.lang.Long",
-				"platforms": ["windows"],
 				"description": "The interface's locally unique identifier"
 			},
 			{
 				"name": "guid",
 				"type": "java.lang.String",
-				"platforms": ["windows"],
 				"description": "The interface's globally unique identifier"
 			},
 			{
 				"name": "paused",
 				"type": "java.lang.Boolean",
-				"platforms": ["windows"],
 				"description": "Whether the interface is in a paused state"
 			},
 			{
 				"name": "low_power",
 				"type": "java.lang.Boolean",
-				"platforms": ["windows"],
 				"description": "Whether the interface is in a low-power state"
 			}
 		]
 	},
 	{
-		"name": "/profile//osquery/disk/",
+		"name": "/profile/*/osquery/disk/*",
 		"attributes": [
 			{
 				"name": "name",
@@ -239,7 +240,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/disk//partition/",
+		"name": "/profile/*/osquery/disk/*/partition/*",
 		"attributes": [
 			{
 				"name": "identification",
@@ -286,7 +287,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/disk//smart",
+		"name": "/profile/*/osquery/disk/*/smart",
 		"attributes": [
 			{
 				"name": "rotation_rate",
@@ -377,7 +378,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/cpu/",
+		"name": "/profile/*/osquery/cpu/*",
 		"attributes": [
 			{
 				"name": "model",
@@ -419,7 +420,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/cpu//thread/",
+		"name": "/profile/*/osquery/cpu/*/thread/*",
 		"attributes": [
 			{
 				"name": "tid",
@@ -429,7 +430,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/cpu//core/",
+		"name": "/profile/*/osquery/cpu/*/core/*",
 		"attributes": [
 			{
 				"name": "usage",
@@ -444,7 +445,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/sensor/",
+		"name": "/profile/*/osquery/sensor/*",
 		"attributes": [
 			{
 				"name": "fan_speed",
@@ -464,7 +465,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/sound_card/",
+		"name": "/profile/*/osquery/sound_card/*",
 		"attributes": [
 			{
 				"name": "driver_version",
@@ -486,7 +487,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/display/",
+		"name": "/profile/*/osquery/display/*",
 		"attributes": [
 			{
 				"name": "name",
@@ -523,7 +524,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/usb_device/",
+		"name": "/profile/*/osquery/usb_device/*",
 		"attributes": [
 			{
 				"name": "name",
@@ -557,12 +558,12 @@
 			},
 			{
 				"name": "children",
-				"type": "/profile//osquery/usb_device"
+				"type": "/profile/*/osquery/usb_device"
 			}
 		]
 	},
 	{
-		"name": "/profile//osquery/network",
+		"name": "/profile/*/osquery/network",
 		"attributes": [
 			{
 				"name": "hostname",
@@ -583,7 +584,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/network/route/",
+		"name": "/profile/*/osquery/network/route/*",
 		"attributes": [
 			{
 				"name": "destination",
@@ -638,7 +639,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/battery",
+		"name": "/profile/*/osquery/battery",
 		"attributes": [
 			{
 				"name": "manufacturer",
@@ -721,7 +722,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/power_sensor/",
+		"name": "/profile/*/osquery/power_sensor/*",
 		"attributes": [
 			{
 				"name": "category",
@@ -741,7 +742,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/firmware",
+		"name": "/profile/*/osquery/firmware",
 		"attributes": [
 			{
 				"name": "name",
@@ -788,7 +789,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/mainboard",
+		"name": "/profile/*/osquery/mainboard",
 		"attributes": [
 			{
 				"name": "model",
@@ -817,7 +818,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/kernel/process/",
+		"name": "/profile/*/osquery/kernel/process/*",
 		"attributes": [
 			{
 				"name": "name",
@@ -943,7 +944,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/kernel/process//namespace/",
+		"name": "/profile/*/osquery/kernel/process/*/namespace/*",
 		"attributes": [
 			{
 				"name": "cgroup_namespace",
@@ -983,7 +984,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/kernel/process//file",
+		"name": "/profile/*/osquery/kernel/process/*/file",
 		"attributes": [
 			{
 				"name": "fd",
@@ -998,7 +999,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/kernel/process//socket",
+		"name": "/profile/*/osquery/kernel/process/*/socket",
 		"attributes": [
 			{
 				"name": "fd",
@@ -1069,7 +1070,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/os",
+		"name": "/profile/*/osquery/os",
 		"attributes": [
 			{
 				"name": "name",
@@ -1140,7 +1141,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/memory",
+		"name": "/profile/*/osquery/memory",
 		"attributes": [
 			{
 				"name": "total",
@@ -1199,7 +1200,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/memory/map/",
+		"name": "/profile/*/osquery/memory/map/*",
 		"attributes": [
 			{
 				"name": "name",
@@ -1222,7 +1223,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/memory/device",
+		"name": "/profile/*/osquery/memory/device",
 		"attributes": [
 			{
 				"name": "handle",
@@ -1347,7 +1348,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/network/arp_cache/",
+		"name": "/profile/*/osquery/network/arp_cache/*",
 		"attributes": [
 			{
 				"name": "address",
@@ -1376,7 +1377,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/network/host/",
+		"name": "/profile/*/osquery/network/host/*",
 		"attributes": [
 			{
 				"name": "address",
@@ -1393,7 +1394,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/block_device/",
+		"name": "/profile/*/osquery/block_device/*",
 		"attributes": [
 			{
 				"name": "name",
@@ -1452,7 +1453,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/user/",
+		"name": "/profile/*/osquery/user/*",
 		"attributes": [
 			{
 				"name": "uid",
@@ -1493,7 +1494,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/group/",
+		"name": "/profile/*/osquery/group/*",
 		"attributes": [
 			{
 				"name": "gid",
@@ -1522,7 +1523,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/kernel/modules/",
+		"name": "/profile/*/osquery/kernel/modules/*",
 		"attributes": [
 			{
 				"name": "name",
@@ -1557,7 +1558,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/bound_port/",
+		"name": "/profile/*/osquery/bound_port/*",
 		"attributes": [
 			{
 				"name": "pid",
@@ -1616,7 +1617,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/mount/",
+		"name": "/profile/*/osquery/mount/*",
 		"attributes": [
 			{
 				"name": "device",
@@ -1687,7 +1688,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/python_package/",
+		"name": "/profile/*/osquery/python_package/*",
 		"attributes": [
 			{
 				"name": "name",
@@ -1734,7 +1735,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/deb_package/",
+		"name": "/profile/*/osquery/deb_package/*",
 		"attributes": [
 			{
 				"name": "name",
@@ -1799,7 +1800,7 @@
 		]
 	},
 	{
-		"name": "/profile//osquery/firefox/addon/",
+		"name": "/profile/*/osquery/firefox/addon/*",
 		"attributes": [
 			{
 				"name": "uid",
