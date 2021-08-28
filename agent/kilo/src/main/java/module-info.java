@@ -7,10 +7,15 @@
 //  as published by the Mozilla Foundation.                                   //
 //                                                                            //
 //============================================================================//
-package com.sandpolis.plugin.osquery.agent.vanilla;
+module com.sandpolis.plugin.osquery.agent.kilo {
+	exports com.sandpolis.plugin.osquery.agent.kilo;
 
-import com.sandpolis.core.instance.plugin.SandpolisPlugin;
+	requires com.sandpolis.core.foundation;
+	requires com.sandpolis.core.instance;
+	requires com.sandpolis.core.net;
+	requires com.sandpolis.plugin.osquery;
+	requires org.slf4j;
+	requires java.net.http;
 
-public final class OsqueryPlugin extends SandpolisPlugin {
-
+	provides com.sandpolis.core.instance.plugin.SandpolisPlugin with com.sandpolis.plugin.osquery.agent.kilo.OsqueryPlugin;
 }

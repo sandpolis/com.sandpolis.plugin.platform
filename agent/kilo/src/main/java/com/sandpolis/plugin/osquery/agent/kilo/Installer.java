@@ -7,7 +7,7 @@
 //  as published by the Mozilla Foundation.                                   //
 //                                                                            //
 //============================================================================//
-package com.sandpolis.plugin.osquery.agent.vanilla;
+package com.sandpolis.plugin.osquery.agent.kilo;
 
 import java.io.IOException;
 import java.net.URI;

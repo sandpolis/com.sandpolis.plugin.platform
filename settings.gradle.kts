@@ -10,5 +10,5 @@
 
 rootProject.name = "com.sandpolis.plugin.osquery"
 
-include("agent:vanilla")
+include("agent:kilo")
 include("server:vanilla")

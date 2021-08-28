@@ -24,7 +24,7 @@ dependencies {
 
 eclipse {
 	project {
-		name = "com.sandpolis.plugin.osquery:agent:vanilla"
-		comment = "com.sandpolis.plugin.osquery:agent:vanilla"
+		name = "com.sandpolis.plugin.osquery:agent:kilo"
+		comment = "com.sandpolis.plugin.osquery:agent:kilo"
 	}
 }
